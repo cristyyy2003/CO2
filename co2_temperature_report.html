@@ -1,0 +1,164 @@
+<script type="text/javascript">
+        var gk_isXlsx = false;
+        var gk_xlsxFileLookup = {"Book2.csv":false};
+        var gk_fileData = {"Book2.csv":"Time(DD/MM/YYYY H:mm:ss),Carbon dioxide(ppm),Inside Temp (¬∞C),Outside Temp (¬∞C)\r\n06/08/2025 0:41:39,1271,21.4,28.5\r\n06/08/2025 0:46:39,1253,21.4,28.5\r\n06/08/2025 0:51:39,1190,21.9,26.5\r\n06/08/2025 0:56:39,1214,21.9,26.5\r\n06/08/2025 1:01:39,1228,21.9,26.5\r\n06/08/2025 1:06:39,1185,21.9,25.5\r\n06/08/2025 1:11:39,1227,21.9,25.5\r\n06/08/2025 1:16:39,1300,21.9,24.5\r\n06/08/2025 1:21:39,1286,21.9,24.5\r\n06/08/2025 1:26:39,1274,21.9,24.5\r\n06/08/2025 1:31:39,1421,20.9,24.5\r\n06/08/2025 1:36:39,926,20.9,24.5\r\n06/08/2025 1:41:39,770,20.9,24.5\r\n06/08/2025 1:46:39,750,20.9,24.5\r\n06/08/2025 1:51:39,778,20.9,23.5\r\n06/08/2025 1:56:39,748,20.9,23.5\r\n06/08/2025 2:01:39,706,20.9,23.5\r\n06/08/2025 2:06:39,695,20.9,22.5\r\n06/08/2025 2:11:39,683,20.9,22.5\r\n06/08/2025 2:16:39,683,20.9,22.5\r\n06/08/2025 2:21:39,713,20.9,20.5\r\n06/08/2025 2:26:39,638,20.9,20.5\r\n06/08/2025 2:31:39,670,20.9,20.5\r\n06/08/2025 2:36:39,732,20.9,19.5\r\n06/08/2025 2:41:39,747,20.9,19.5\r\n06/08/2025 2:46:39,783,20.9,19.5\r\n06/08/2025 2:51:39,791,20.9,18.5\r\n06/08/2025 2:56:39,753,20.9,18.5\r\n06/08/2025 3:01:39,767,20.9,18.5\r\n06/08/2025 3:06:39,723,20.9,21.5\r\n06/08/2025 3:11:39,749,20.9,22.5\r\n06/08/2025 3:16:39,741,20.9,22.5\r\n06/08/2025 3:21:39,698,20.9,22.5\r\n06/08/2025 3:26:39,675,20.9,22.5\r\n06/08/2025 3:31:39,643,20.9,22.5\r\n06/08/2025 3:36:39,707,20.9,20.5\r\n06/08/2025 3:41:39,588,20.9,20.5\r\n06/08/2025 3:46:39,580,20.9,20.5\r\n06/08/2025 3:51:39,554,20.9,19.5\r\n06/08/2025 3:56:39,560,20.9,19.5\r\n06/08/2025 4:01:39,546,20.9,19.5\r\n06/08/2025 4:06:39,557,20.9,19.5\r\n06/08/2025 4:11:39,564,20.9,19.5\r\n06/08/2025 4:16:39,559,20.9,18.5\r\n06/08/2025 4:21:39,618,20.9,18.5\r\n06/08/2025 4:26:39,749,20.9,18.5\r\n06/08/2025 5:21:20,760,20.4,19.5\r\n06/08/2025 5:26:20,727,20.4,18.5\r\n06/08/2025 5:31:20,719,20.4,18.5\r\n06/08/2025 5:36:20,671,20.4,17.5\r\n06/08/2025 5:41:20,604,20.4,17.5\r\n06/08/2025 5:46:20,608,20.4,17.5\r\n06/08/2025 6:01:20,616,20.4,17.5\r\n06/08/2025 6:06:20,736,20.9,18.5\r\n06/08/2025 6:26:20,692,21.9,18.5\r\n06/08/2025 6:31:20,777,21.9,18.5\r\n06/08/2025 6:36:20,831,21.9,19.5\r\n06/08/2025 6:41:20,800,21.9,20.5\r\n06/08/2025 6:46:20,865,21.9,19.5\r\n06/08/2025 6:51:20,845,21.9,18.5\r\n06/08/2025 6:56:20,831,21.9,18.5\r\n06/08/2025 7:01:20,826,21.9,18.5\r\n06/08/2025 7:06:20,842,21.9,17.5\r\n06/08/2025 7:11:20,748,21.9,17.5\r\n06/08/2025 7:16:20,754,21.9,17.5\r\n06/08/2025 7:21:20,730,21.9,17.5\r\n06/08/2025 7:26:20,744,21.9,17.5\r\n06/08/2025 7:31:20,781,21.4,17.5\r\n06/08/2025 7:36:20,738,21.4,17.5\r\n06/08/2025 7:41:20,765,21.4,17.5\r\n06/08/2025 7:46:20,764,21.4,16.5\r\n06/08/2025 7:51:20,738,21.4,16.5\r\n06/08/2025 7:56:20,869,21.4,16.5\r\n06/08/2025 8:01:20,810,21.4,16.5\r\n06/08/2025 8:06:20,767,21.4,16.5\r\n06/08/2025 8:11:20,732,21.4,16.5\r\n06/08/2025 8:16:20,608,21.4,16.5\r\n06/08/2025 8:21:20,832,21.4,19.5\r\n06/08/2025 8:26:20,549,21.4,19.5\r\n06/08/2025 8:31:20,549,21.4,19.5\r\n06/08/2025 8:36:20,518,21.4,20.5\r\n06/08/2025 8:41:20,517,21.4,20.5\r\n06/08/2025 8:46:20,509,21.4,21.5\r\n06/08/2025 8:51:20,523,21.4,21.5\r\n06/08/2025 8:56:20,517,21.4,21.5\r\n06/08/2025 9:01:20,512,21.4,21.5\r\n06/08/2025 9:06:20,485,20.9,23.5\r\n06/08/2025 9:11:20,462,20.9,29.5\r\n06/08/2025 10:26:20,822,20.9,29.5\r\n06/08/2025 10:31:20,810,20.9,28.5\r\n06/08/2025 10:36:20,825,20.9,27.5\r\n06/08/2025 10:41:20,814,20.9,26.5\r\n06/08/2025 10:46:20,651,21.9,26.5\r\n06/08/2025 10:51:20,740,21.9,26.5\r\n06/08/2025 10:56:20,775,21.9,26.5\r\n06/08/2025 11:01:20,771,21.9,26.5\r\n06/08/2025 11:06:20,770,21.9,25.5\r\n06/08/2025 11:11:20,1478,21.9,24.5\r\n06/08/2025 11:16:20,1890,21.9,23.5\r\n06/08/2025 11:21:20,2117,21.9,21.5\r\n06/08/2025 11:26:20,2291,21.9,21.5\r\n06/08/2025 11:31:20,2545,21.9,21.5\r\n06/08/2025 11:36:20,2592,21.9,21.5\r\n06/08/2025 11:41:20,2614,21.9,22.5\r\n06/08/2025 11:46:20,2619,21.9,23.5\r\n06/08/2025 11:51:20,2571,21.9,23.5\r\n06/08/2025 11:56:20,2364,21.4,23.5\r\n06/08/2025 12:01:20,2591,21.9,23.5\r\n06/08/2025 12:06:20,2558,21.4,24.5\r\n06/08/2025 12:11:20,2570,21.4,25.5\r\n06/08/2025 12:16:20,2138,21.4,25.5\r\n06/08/2025 12:21:20,1972,21.4,26.5\r\n06/08/2025 12:26:20,1974,21.9,26.5\r\n06/08/2025 12:31:20,1954,21.9,26.5\r\n06/08/2025 12:36:20,1883,21.4,27.5\r\n06/08/2025 12:41:20,1509,20.9,27.5\r\n06/08/2025 12:46:20,877,21.4,27.5\r\n06/08/2025 12:51:20,746,21.9,27.5\r\n06/08/2025 12:56:20,768,21.9,28.5\r\n06/08/2025 13:01:20,756,21.9,27.5\r\n06/08/2025 13:06:20,757,21.9,26.5\r\n06/08/2025 13:11:20,739,21.9,26.5\r\n06/08/2025 13:16:20,725,21.9,26.5\r\n06/08/2025 13:21:20,746,21.9,26.5\r\n06/08/2025 13:26:20,715,21.4,26.5\r\n06/08/2025 13:31:20,745,21.9,26.5\r\n06/08/2025 13:36:20,722,21.9,25.5\r\n06/08/2025 13:41:20,708,21.9,25.5"};
+        function filledCell(cell) {
+          return cell !== '' && cell != null;
+        }
+        function loadFileData(filename) {
+        if (gk_isXlsx && gk_xlsxFileLookup[filename]) {
+            try {
+                var workbook = XLSX.read(gk_fileData[filename], { type: 'base64' });
+                var firstSheetName = workbook.SheetNames[0];
+                var worksheet = workbook.Sheets[firstSheetName];
+
+                // Convert sheet to JSON to filter blank rows
+                var jsonData = XLSX.utils.sheet_to_json(worksheet, { header: 1, blankrows: false, defval: '' });
+                // Filter out blank rows (rows where all cells are empty, null, or undefined)
+                var filteredData = jsonData.filter(row => row.some(filledCell));
+
+                // Heuristic to find the header row by ignoring rows with fewer filled cells than the next row
+                var headerRowIndex = filteredData.findIndex((row, index) =>
+                  row.filter(filledCell).length >= filteredData[index + 1]?.filter(filledCell).length
+                );
+                // Fallback
+                if (headerRowIndex === -1 || headerRowIndex > 25) {
+                  headerRowIndex = 0;
+                }
+
+                // Convert filtered JSON back to CSV
+                var csv = XLSX.utils.aoa_to_sheet(filteredData.slice(headerRowIndex)); // Create a new sheet from filtered array of arrays
+                csv = XLSX.utils.sheet_to_csv(csv, { header: 1 });
+                return csv;
+            } catch (e) {
+                console.error(e);
+                return "";
+            }
+        }
+        return gk_fileData[filename] || "";
+        }
+        </script><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CO2 and Temperature Report</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prop-types/15.8.1/prop-types.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/umd/react.production.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.2.0/umd/react-dom.production.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/7.23.2/babel.min.js"></script>
+  <script src="https://unpkg.com/papaparse@latest/papaparse.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/chrono-node/1.3.11/chrono.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/recharts/2.15.0/Recharts.min.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 font-sans">
+  <div id="root"></div>
+  <script type="text/babel">
+    // Initializing React and necessary components
+    const { useState, useEffect } = React;
+    const { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } = Recharts;
+
+    // Defining the main Report component
+    const Report = () => {
+      const [data, setData] = useState([]);
+      const [loading, setLoading] = useState(true);
+
+      // Loading and processing CSV data
+      useEffect(() => {
+        const csv = loadFileData("Book2.csv");
+        Papa.parse(csv, {
+          header: true,
+          skipEmptyLines: true,
+          transformHeader: (header) => header.trim().replace(/^"|"$/g, ''),
+          transform: (value, header) => {
+            let cleaned = value.trim().replace(/^"|"$/g, '');
+            if (header === 'Carbon dioxide(ppm)' || header.includes('Temp')) {
+              return isNaN(cleaned) || cleaned === '' ? null : Number(cleaned);
+            }
+            return cleaned;
+          },
+          complete: (results) => {
+            // Cleaning and aggregating data
+            const cleanedData = results.data
+              .filter(row => row['Time(DD/MM/YYYY H:mm:ss)'] && row['Carbon dioxide(ppm)'] !== null)
+              .map(row => {
+                const date = chrono.parseDate(row['Time(DD/MM/YYYY H:mm:ss)']);
+                return {
+                  time: date ? `${date.getHours().toString().padStart(2, '0')}:${date.getMinutes().toString().padStart(2, '0')}` : null,
+                  hour: date ? date.getHours() : null,
+                  co2: row['Carbon dioxide(ppm)'],
+                  insideTemp: row['Inside Temp (¬∞C)'],
+                  outsideTemp: row['Outside Temp (¬∞C)']
+                };
+              })
+              .filter(row => row.time && row.hour !== null);
+
+            // Aggregating by hour to get max CO2
+            const hourlyData = Array.from({ length: 24 }, (_, i) => i).map(hour => {
+              const hourData = cleanedData.filter(row => row.hour === hour);
+              if (hourData.length === 0) return null;
+              const maxCO2 = Math.max(...hourData.map(row => row.co2));
+              const avgInsideTemp = hourData.reduce((sum, row) => sum + row.insideTemp, 0) / hourData.length;
+              const avgOutsideTemp = hourData.reduce((sum, row) => sum + row.outsideTemp, 0) / hourData.length;
+              return {
+                time: `${hour.toString().padStart(2, '0')}:00`,
+                maxCO2,
+                insideTemp: avgInsideTemp,
+                outsideTemp: avgOutsideTemp
+              };
+            }).filter(row => row !== null);
+
+            setData(hourlyData);
+            setLoading(false);
+          },
+          error: (err) => {
+            console.error(err);
+            setLoading(false);
+          }
+        });
+      }, []);
+
+      // Rendering loading state
+      if (loading) {
+        return <div className="text-center text-2xl mt-10">Loading data...</div>;
+      }
+
+      // Rendering the report layout
+      return (
+        <div className="container mx-auto p-6">
+          <h1 className="text-3xl font-bold text-center mb-6 text-blue-800">CO2 and Temperature Analysis</h1>
+          
+          {/* Displaying the line chart */}
+          <div className="bg-white p-6 rounded-lg shadow-lg">
+            <h2 className="text-xl font-semibold mb-4">Max CO2 and Temperatures Over Time</h2>
+            <ResponsiveContainer width="100%" height={400}>
+              <LineChart data={data} margin={{ top: 20, right: 30, left: 20, bottom: 10 }}>
+                <CartesianGrid strokeDasharray="3 3" />
+                <XAxis dataKey="time" label={{ value: 'Hour', position: 'insideBottom', offset: -5 }} />
+                <YAxis yAxisId="left" label={{ value: 'Max CO2 (ppm)', angle: -90, position: 'insideLeft' }} />
+                <YAxis yAxisId="right" orientation="right" label={{ value: 'Temperature (°C)', angle: 90, position: 'insideRight' }} />
+                <Tooltip />
+                <Legend />
+                <Line yAxisId="left" type="monotone" dataKey="maxCO2" stroke="#8884d8" name="Max CO2" strokeWidth={2} />
+                <Line yAxisId="right" type="monotone" dataKey="insideTemp" stroke="#82ca9d" name="Inside Temp" strokeWidth={2} />
+                <Line yAxisId="right" type="monotone" dataKey="outsideTemp" stroke="#ff7300" name="Outside Temp" strokeWidth={2} />
+              </LineChart>
+            </ResponsiveContainer>
+          </div>
+          
+          {/* Adding a summary */}
+          <div className="mt-6 bg-white p-6 rounded-lg shadow-lg">
+            <h2 className="text-xl font-semibold mb-4">Summary</h2>
+            <p>The graph shows the maximum CO2 levels (in ppm) per hour alongside the average indoor and outdoor temperatures (°C). A notable observation is the peak CO2 level of {Math.max(...data.map(d => d.maxCO2))} ppm around {data.find(d => d.maxCO2 === Math.max(...data.map(d => d.maxCO2))).time}, which may indicate a period of high occupancy or poor ventilation. The indoor temperature remains relatively stable, while the outdoor temperature fluctuates more significantly, suggesting a dynamic external environment.</p>
+          </div>
+        </div>
+      );
+    };
+
+    // Rendering the component to the DOM
+    const root = ReactDOM.createRoot(document.getElementById('root'));
+    root.render(<Report />);
+  </script>
+</body>
+</html>
